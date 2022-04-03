@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'
+        rel='stylesheet' type='text/css'>
+    <link href="http://fonts.cdnfonts.com/css/dosis" rel="stylesheet">
+</head>
+
+<body>
+    <!-- sidebar -->
+    <nav class="fixed w-20 shadow-nav lg:w-24 over z-20">
+        <div class="text-center bg-cbase relative">
+            <a href="/" class="leading-smlogo font-medium text-55 text-white lg:leading-logo">F</a>
+            <div
+                class="block shadow-nav absolute h-20 w-screen w-[calc(100vw-80px)] bg-white top-0 left-[80px] flex justify-end items-center lg:hidden">
+                <div class="w-20 h-full flex items-center justify-center">
+                    <i id="collabse" class="fa-solid fa-bars cursor-pointer"></i>
+                    <span class="hidden cursor-pointer">X</span>
+                </div>
+            </div>
+        </div>
+        <ul
+            class="relative hidden h-[calc(100vh-80px)] z-10 w-20 text-lg text-center pt-24 lg:w-24 lg:block lg:h-[calc(100vh-96px)]">
+            <li class="nav relative h-20 flex block items-center border-b-1 border-cthird border-solid border-t-1">
+                <a href="/index" class="w-full">
+                    <i class="fa-solid fa-house text-csecondary block"></i>
+                    <p class="block text-sm text-csecondary">Home</p>
+                </a>
+            </li>
+            <li class="nav relative h-20 flex block items-center border-b-1 border-cthird border-solid border-t-1">
+                <a href="/about" class="w-full">
+                    <i class="fa-solid fa-user text-csecondary block"></i>
+                    <p class="block text-sm text-csecondary">About</p>
+                </a>
+            </li>
+            <li
+                class="nav-active nav relative h-20 flex block items-center border-b-1 border-cthird border-solid border-t-1">
+                <a href="/" class="w-full">
+                    <i class="fa-solid fa-address-card text-csecondary block"></i>
+                    <p class="block text-sm text-csecondary">Contact</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end of sidebar -->
+    <main class="bg-[#F4F4F4] relative w-full pt-[80px] w-100% lg:w-[calc(100%-96px)] lg:ml-24  lg:pt-0">
+        <!-- header -->
+        <div
+            class="relative bg-[url('../src/assets/bg3.jpg')] bg-cover h-[80px] bg-header w-full flex items-center lg:h-90">
+            <h3 class="text-white relative z-30 text-3xl font-bold ml-[90px] lg:ml-5">Contact</h3>
+        </div>
+        <!-- end of header -->
+        <div class="px-9 py-6 mt-14 w-full">
+            <div class="flex flex-col lg:flex-row gap-x-4 gap-y-4">
+                <div class="lg:flex-3 bg-white rounded-lg px-10 py-5">
+                    <h4 class="text-cbase text-lg font-semibold">Contact Me</h4>
+                    <p class="font-dosis text-csecondary text-3xl mt-8">Let's Get In Touch</p>
+                    <form action="#" method="post" class="mt-5 w-full">
+                        <div class="flex w-full gap-x-2">
+                            <div class="flex-1">
+                                <label for="email" class="hidden">Email</label>
+                                <input type="email" id="email" class="w-full leading-10 border-b  border-[#ddd] focus:border-cbase border-solid outline-0 text-lg text-csecondary" placeholder="Email"/>
+                            </div>
+                            <div class="flex-1">
+                                <label for="name" class="hidden">Name</label>
+                                <input type="text" id="name" class="w-full leading-10 border-b  border-[#ddd] focus:border-cbase border-solid outline-0 text-lg text-csecondary" placeholder="Name"/>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <label for="subject" class="hidden">Subject</label>
+                            <input type="text" class="w-full leading-10 border-b border-[#ddd] focus:border-cbase border-solid outline-0 text-lg text-csecondary" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="mt-8">
+                            <label for="message" class="hidden">Message</label>
+                            <textarea name="message" id="message" placeholder="Message" class="w-full min-h-[170px] border-b  border-[#ddd] focus:border-cbase border-solid outline-0 text-lg text-csecondary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-cbase px-7 py-3 mt-5 text-white font-semibold rounded-[30px]">Submit</button>
+                    </form>
+                </div>
+                <div class="lg:flex-1.5">
+                    <div class="bg-white rounded-lg px-5 py-5">
+                        <div class="float-left mr-5">
+                            <i class="fa-solid fa-envelope text-[55px] text-cbase"></i>
+                        </div>
+                        <div class="float-left">
+                            <h3 class="text-cbase text-xl font-medium">Email</h3>
+                            <p class="text-csecondary">fahrulputra40@gmail.com</p>
+                        </div>
+                        <div class="clear-both"></div>
+                    </div>
+                    <div class="bg-white rounded-lg px-5 py-5 mt-5">
+                        <div class="float-left mr-5">
+                            <i class="fa-solid fa-phone text-[55px] text-cbase"></i>
+                        </div>
+                        <div class="float-left">
+                            <h3 class="text-cbase text-xl font-medium">Phone</h3>
+                            <p class="text-csecondary">+6281213737767</p>
+                        </div>
+                        <div class="clear-both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-3 px-7 bg-cfiveth text-center">
+            <p class="text-csixth text-sm font-medium lg:float-left">
+                Design by <a href="/" class="text-cbase">Fahrul Putra Pratama</a>
+            </p>
+            <p class="text-csixth mt-1 text-sm font-medium lg:mt-0 lg:float-right">
+                Email <span class="text-cbase">fahrulputra40@gmail.com</span>
+            </p>
+            <div class="clear-both"></div>
+        </footer>
+    </main>
+    <script src="./side.js"></script>
+</body>
+
+</html>

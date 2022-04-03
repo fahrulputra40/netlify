@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.cdnfonts.com/css/dosis" rel="stylesheet">   
+</head>
+<body class="font-roboto w-full bg-white">
+     <!-- sidebar -->
+     <nav class="fixed w-20 shadow-nav lg:w-24 over z-20">
+        <div class="text-center bg-cbase relative">
+            <a href="/" class="leading-smlogo font-medium text-55 text-white lg:leading-logo">F</a>
+            <div class="block shadow-nav absolute h-20 w-screen w-[calc(100vw-80px)] bg-white top-0 left-[80px] flex justify-end items-center lg:hidden">
+                <div class="w-20 h-full flex items-center justify-center">
+                    <i id="collabse" class="fa-solid fa-bars cursor-pointer"></i>
+                    <span class="hidden cursor-pointer">X</span>
+                </div>
+            </div>
+        </div>
+        <ul class="relative hidden h-[calc(100vh-80px)] z-10 w-20 text-lg text-center pt-24 lg:w-24 lg:block lg:h-[calc(100vh-96px)]">
+            <li class="nav relative h-20 flex block items-center border-b-1 border-cthird border-solid border-t-1">
+               <a href="/index" class="w-full">
+                <i class="fa-solid fa-house text-csecondary block"></i>
+                <p class="block text-sm text-csecondary">Home</p>
+               </a> 
+            </li>
+             <li class="nav-active nav relative h-20 flex block items-center border-b-1 border-cthird border-solid border-t-1">
+                <a href="/about" class="w-full">
+                 <i class="fa-solid fa-user text-csecondary block"></i>
+                 <p class="block text-sm text-csecondary">About</p>
+                </a> 
+             </li>
+             <li class="nav relative h-20 flex block items-center border-b-1 border-cthird border-solid border-t-1">
+                 <a href="/" class="w-full">
+                  <i class="fa-solid fa-address-card text-csecondary block"></i>
+                  <p class="block text-sm text-csecondary">Contact</p>
+                 </a> 
+              </li>
+        </ul>
+    </nav>
+    <!-- end of sidebar -->
+    <main class="bg-[#F4F4F4] relative w-full pt-[80px] w-100% lg:w-[calc(100%-96px)] lg:ml-24  lg:pt-0">
+        <!-- header -->
+        <div class="relative bg-[url('../src/assets/bg3.jpg')] bg-cover h-[400px] bg-header w-full">
+            <div class="relative w-full h-full z-10 text-center pt-10 text-white">
+                <div class="avatar relative w-[150px] h-[150px] m-auto relative">
+                    <div class="rounded-[75px] w-full h-full overflow-hidden">
+                        <img src="/src/assets/photo.jpg" alt="photo" width="100%" class="relative top-[-30px]">
+                    </div>
+                </div>
+                <h3 class="pt-10 text-4xl font-medium">Fahrul Putra Pratama</h3>
+                <p>Software engineer</p>
+            </div>
+        </div>
+        <!-- end of header -->
+        <div class="px-5 py-6 mt-14 w-full gap-y-7 flex flex-col">
+            <div class="flex gap-x-3.5 gap-y-7 flex-col lg:flex-row lg:gap-y-0">
+                <div class="rounded-lg shadow-nav bg-white p-5 w-full lg:flex-2">
+                    <h4 class="capitalize font-semibold text-xl">my profile</h4>
+                    <table class="w-full mt-3">
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold capitalize">Name</td>
+                                <td>Fahrul Putra Pratama</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold capitalize">Date of birth</td>
+                                <td>17 November 1999</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold capitalize">Address</td>
+                                <td>Depok, Catur Tunggal Depok Sleman</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold capitalize">Phone</td>
+                                <td>+6281213637747</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold capitalize">email</td>
+                                <td>fahrulputra40@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-full rounded-lg shadow-nav bg-white p-5 lg:flex-3">
+                    <h4 class="capitalize font-semibold text-xl">Intro</h4> 
+                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut eos officia ducimus exercitationem possimus corrupti deserunt, temporibus mollitia nemo inventore soluta explicabo molestiae maxime eveniet, iure error. Ad, magni.</p>        
+                </div>
+            </div>
+            <div class="flex gap-x-3.5 gap-y-7 w-full flex-col lg:flex-row lg:gap-y-0">
+                <div class="rounded-lg shadow-nav bg-white p-5 flex-3">
+                    <h4 class="capitalize font-semibold text-xl mb-3 block">Skill</h4>
+                    <ul class="flex w-full flex-wrap text-center">
+                        <li class="px-4 py-3">
+                            <div class="w-16">
+                                <img src="./assets/html.png" alt="HTML" width="100%">
+                                <p class="font-medium mt-2">HTML</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-12">
+                                <img src="./assets/css.png" alt="HTML" width="100%">
+                                <p class="font-medium mt-2 text-center">CSS</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-16">
+                                <img src="./assets/js.png" alt="HTML" width="100%">
+                            <p class="font-medium mt-2 text-center">Javascript</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-16">
+                                <img src="./assets/node.png" alt="HTML" width="90%">
+                                <p class="font-medium mt-2 text-center">Node JS</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-16 pt-7">
+                                <img src="./assets/tailwind.png" alt="HTML" width="100%">
+                                <p class="font-medium mt-2 text-center">Tailwind</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-20">
+                                <img src="./assets/express.png" alt="HTML" width="90%">
+                                <p class="font-medium mt-2 text-center">Express JS</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-16">
+                                <img src="./assets/cpp.png" alt="HTML" width="100%">
+                                <p class="font-medium mt-2 text-center">C++</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                           <div class="w-20">
+                            <img src="./assets/c.png" alt="HTML" width="100%">
+                            <p class="font-medium mt-1 text-center">C</p>
+                           </div>
+                        </li>
+                        <li class="px-4 py-3">
+                           <div class="w-16 pt-8">
+                            <img src="./assets/php.png" alt="HTML" width="100%">
+                            <p class="font-medium mt-2 text-center">PHP</p>
+                           </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-16">
+                                <img src="./assets/wp.png" alt="HTML" width="100%">
+                                <p class="font-medium mt-2 text-center">Wordpress</p>
+                            </div>
+                        </li>
+                        <li class="px-4 py-3">
+                            <div class="w-16"><img src="./assets/webpack.png" alt="HTML" width="100%">
+                                <p class="font-medium mt-2 text-center">Webpack</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-lg shadow-nav bg-white p-5 flex-2">
+                    <h4 class="capitalize font-semibold text-xl mb-3 block">Language</h4>
+                    <ul>
+                        <li>Indonesia - Native</li>
+                        <li>English - Intermedit</li>
+                    </ul>
+                    <h4 class="capitalize font-semibold text-xl mb-3 block mt-4">Interesting</h4>
+                    <div class="text-4xl mt-2">
+                        <i title="Traveling" class="fa-solid fa-plane mr-2 cursor-pointer"></i>
+                        <i title="Reading" class="fa-solid fa-book mr-2 cursor-pointer"></i>
+                        <i title="Programing" class="fa-solid fa-code mr-2 cursor-pointer"></i>
+                        <i title="Game" class="fa-solid fa-gamepad mr-2 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:flex gap-x-3.5 w-full">
+                <div class="rounded-lg shadow-nav bg-white p-5 flex-2">
+                    <h4 class="capitalize font-semibold text-xl mb-3 block">Work Experience</h4>
+                    <div class="work relative pl-10 mt-5">
+                        <div class="work-card relative">
+                            <p class="text-2xl font-medium text-cforth">Jala Tech</p>
+                            <p class="text-csecondary text-sm font-medium mt-2">Jun 2020 - Nov 2021</p>
+                            <p class="font-medium text-base text-[#212529] mt-4">Responsibility</p>
+                            <ul class="text-[#212529] list-disc list-inside pl-5">
+                                <li>RnD</li>
+                                <li>QC</li>
+                            </ul>
+                        </div>
+                        <div class="work-card relative mt-10">
+                            <p class="text-2xl font-medium text-cforth">Merapi Tani Instrument</p>
+                            <p class="text-csecondary text-sm font-medium mt-2">Nov 2021 - present</p>
+                            <p class="font-medium text-base text-[#212529] mt-4">Responsibility</p>
+                            <ul class="text-[#212529] list-disc list-inside pl-5">
+                                <li>Working on Full Stack Developer</li>
+                                <li>Maintaining the applications</li>
+                            </ul>
+                        </div>
+                        <div class="work-card relative mt-10">
+                            <p class="text-2xl font-medium text-cforth">Helber Elektronika Indonesia</p>
+                            <p class="text-csecondary text-sm font-medium mt-2">Nov 2020 - present</p>
+                            <p class="font-medium text-base text-[#212529] mt-4">Responsibility</p>
+                            <ul class="text-[#212529] list-disc list-inside pl-5">
+                                <li>Working on Full Stack Developer and Mobile Developer</li>
+                                <li>Project Manager</li>
+                                <li>Maintaining the applications</li>
+                                <li>RnD</li>
+                            </ul>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <footer class="py-3 px-7 bg-cfiveth text-center">
+            <p class="text-csixth text-sm font-medium lg:float-left">
+                Design by <a href="/" class="text-cbase">Fahrul Putra Pratama</a>
+            </p>
+            <p class="text-csixth mt-1 text-sm font-medium lg:mt-0 lg:float-right">
+                Email <span class="text-cbase">fahrulputra40@gmail.com</span>
+            </p>
+            <div class="clear-both"></div>
+        </footer>
+    </main>
+    <script src="./side.js"></script>
+</body>
+</html>
