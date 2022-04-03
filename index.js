@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function(){
             el[index].style.top = '0px';
        });        
         }
-    }, 100);
+    }, 3000);
 
     collabse.addEventListener('click', function(e){
         if(collabse.getElementsByTagName('span')[0].style.display === 'none' || collabse.getElementsByTagName('span')[0].style.display === ''){
