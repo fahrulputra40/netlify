@@ -816,7 +816,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(48 48 48 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/bg3\.jpg\'\)\] {
+.bg-hero-pattern {
   background-image: url('./bg3.jpg');
 }
 
